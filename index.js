@@ -9,9 +9,7 @@ app.use( async (ctx, next) => {
     await next();
 })
 
-// 設定根路徑的處理函數
 router.get('/', async function(ctx) {
-    // console.log('here', ctx)
     var data = {
         name : 'AndrewChen',
         age: 24
